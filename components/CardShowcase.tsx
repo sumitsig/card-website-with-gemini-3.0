@@ -2,7 +2,8 @@ import React from 'react';
 
 const CardShowcase: React.FC = () => {
   return (
-    <div className="relative w-[300px] h-[188px] sm:w-[420px] sm:h-[264px] md:w-[460px] md:h-[288px] lg:w-[500px] lg:h-[314px] perspective-1000 group mx-auto">
+    // Responsive widths/heights: Default (Phone), SM (Large Phone), MD (Tablet), LG (Laptop)
+    <div className="relative w-[280px] h-[176px] xs:w-[320px] xs:h-[200px] sm:w-[420px] sm:h-[264px] md:w-[460px] md:h-[288px] lg:w-[500px] lg:h-[314px] perspective-1000 group mx-auto">
       <div className="relative w-full h-full transition-transform duration-500 transform group-hover:rotate-x-2 group-hover:rotate-y-2 preserve-3d">
         
         {/* Card Body */}
@@ -15,14 +16,14 @@ const CardShowcase: React.FC = () => {
             <div className="absolute inset-0 card-shine opacity-40 pointer-events-none"></div>
 
             {/* Content Layout */}
-            <div className="relative p-6 sm:p-8 h-full flex flex-col justify-between z-10">
+            <div className="relative p-5 sm:p-8 h-full flex flex-col justify-between z-10">
                 <div className="flex justify-between items-start">
                     
                     {/* Bank Name & Chip Container */}
-                    <div className="flex flex-col gap-3 sm:gap-4">
-                         <div className="font-[Space_Grotesk] font-bold tracking-widest text-gray-300 uppercase text-xs sm:text-base flex items-center gap-2">
-                            <div className="w-2 h-2 bg-orange-600 rounded-full shadow-[0_0_8px_rgba(255,69,0,0.8)]"></div>
-                            IndusInd Bank
+                    <div className="flex flex-col gap-2 sm:gap-4">
+                         <div className="font-[Space_Grotesk] font-bold tracking-widest text-gray-300 uppercase text-[10px] sm:text-base flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-600 rounded-full shadow-[0_0_8px_rgba(255,69,0,0.8)]"></div>
+                            Indusind Bank
                          </div>
                          {/* Chip */}
                         <div className="w-10 h-8 sm:w-14 sm:h-12 bg-gradient-to-br from-yellow-200 to-yellow-500 rounded-md border border-yellow-600/50 flex items-center justify-center shadow-inner mt-1">
@@ -40,14 +41,14 @@ const CardShowcase: React.FC = () => {
                     </svg>
                 </div>
 
-                <div className="space-y-4 sm:space-y-6">
-                    <div className="text-lg sm:text-3xl md:text-4xl font-mono text-gray-300 tracking-widest drop-shadow-md skeumorphic-text-shadow whitespace-nowrap">
+                <div className="space-y-3 sm:space-y-6">
+                    <div className="text-lg xs:text-xl sm:text-3xl md:text-4xl font-mono text-gray-300 tracking-widest drop-shadow-md skeumorphic-text-shadow whitespace-nowrap">
                         4000 1234 5678 9010
                     </div>
                     <div className="flex justify-between items-end">
                         <div className="uppercase">
                             <div className="text-[8px] sm:text-[10px] text-gray-500 tracking-widest mb-1">Card Holder</div>
-                            <div className="font-medium text-gray-200 tracking-wider text-sm sm:text-lg">ARJUN MEHTA</div>
+                            <div className="font-medium text-gray-200 tracking-wider text-xs sm:text-lg">ARJUN MEHTA</div>
                         </div>
                          <div className="text-right">
                             <span className="font-bold italic text-white text-lg sm:text-2xl tracking-tight">VISA</span>

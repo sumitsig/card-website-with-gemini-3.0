@@ -7,15 +7,16 @@ const Hero: React.FC = () => {
     <section className="relative pt-28 pb-16 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
-        {/* Left Content */}
-        <div className="space-y-6 md:space-y-8 z-10 text-center lg:text-left">
+        {/* Left Content - Order 1 on mobile, Order 1 on Desktop */}
+        <div className="space-y-6 md:space-y-8 z-10 text-center lg:text-left order-1">
           <div className="inline-block">
             <span className="py-1 px-3 rounded-full bg-orange-100 border border-orange-200 dark:bg-orange-900/20 dark:border-orange-500/20 text-orange-600 dark:text-orange-400 text-xs font-bold tracking-[0.2em] uppercase transition-colors">
               By Invitation Only
             </span>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-7xl xl:text-8xl font-bold leading-[0.9] tracking-tight text-gray-900 dark:text-white transition-colors">
+          {/* Responsive Typography: sm (Phone), md (Tablet), lg (Laptop), xl (Desktop) */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[0.9] tracking-tight text-gray-900 dark:text-white transition-colors">
             NOT <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 via-gray-700 to-gray-900 dark:from-gray-100 dark:via-gray-400 dark:to-gray-600">
                 EVERYBODY
@@ -24,7 +25,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl mx-auto lg:mx-0 leading-relaxed transition-colors">
-            The IndusInd Bank Black Card isn't just a credit card. It's a key to a world that refuses to wait. Crafted for the few who demand perfection.
+            The Indusind Bank Black Card isn't just a credit card. It's a key to a world that refuses to wait. Crafted for the few who demand perfection.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -38,8 +39,8 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Content (Card) */}
-        <div className="flex justify-center lg:justify-end relative z-10 mt-8 lg:mt-0">
+        {/* Right Content (Card) - Order 2 on mobile */}
+        <div className="flex justify-center lg:justify-end relative z-10 mt-8 lg:mt-0 order-2">
             <div className="relative w-full flex justify-center">
                  <CardShowcase />
                  {/* Background Glow */}

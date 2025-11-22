@@ -25,7 +25,7 @@ const Features: React.FC = () => {
         <div className="mb-16 text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white transition-colors">Engineered for <span className="text-orange-600 dark:text-orange-500">Excellence</span></h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl transition-colors text-lg">
-                Every detail of the IndusInd Black is designed to provide friction-less luxury.
+                Every detail of the Indusind Black is designed to provide friction-less luxury.
             </p>
         </div>
 

@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="py-12 bg-white dark:bg-black border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-12 text-sm">
             <div className="space-y-4">
-                <h3 className="text-xl font-bold font-[Space_Grotesk] text-gray-900 dark:text-white">INDUSIND <span className="text-orange-600 dark:text-orange-500">BANK</span></h3>
+                <h3 className="text-xl font-bold font-[Space_Grotesk] text-gray-900 dark:text-white">Indusind <span className="text-orange-600 dark:text-orange-500">Bank</span></h3>
                 <p className="text-gray-600 dark:text-gray-500">
                     Redefining banking for the modern elite.
                 </p>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 mt-12 pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-500 dark:text-gray-600 text-xs transition-colors">
-            <p>&copy; {new Date().getFullYear()} IndusInd Bank. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Indusind Bank. All rights reserved.</p>
             <p className="mt-2 md:mt-0">Not everybody gets it.</p>
         </div>
     </footer>

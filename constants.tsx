@@ -63,7 +63,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: 'Alexander V.',
     role: 'Venture Capitalist',
-    content: 'I’ve used Amex Centurion, but IndusInd Bank Black feels different. It’s quieter about its luxury.',
+    content: 'I’ve used Amex Centurion, but Indusind Bank Black feels different. It’s quieter about its luxury.',
     avatar: 'https://picsum.photos/100/100?random=1',
   },
   {

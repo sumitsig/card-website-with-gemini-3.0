@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IndusInd Bank | Not Everybody Gets It</title>
+    <title>Indusind Bank | Not Everybody Gets It</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -19,6 +19,14 @@
             backgroundImage: {
               'texture-dark': "radial-gradient(circle at 50% 0%, rgba(255, 69, 0, 0.08), transparent 40%), linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2))",
               'texture-light': "radial-gradient(circle at 50% 0%, rgba(255, 69, 0, 0.05), transparent 40%), linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0.8))",
+            },
+            screens: {
+              'xs': '475px',
+              'sm': '640px',
+              'md': '768px',
+              'lg': '1024px',
+              'xl': '1280px',
+              '2xl': '1536px',
             }
           }
         }
@@ -59,9 +67,8 @@
         opacity: 0.07;
       }
 
-      .light-texture-overlay {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-        opacity: 0.4;
+      html:not(.dark) .bg-texture {
+        opacity: 0.03;
         mix-blend-mode: multiply;
       }
 
@@ -164,10 +171,12 @@
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
@@ -175,5 +184,6 @@
   <body class="bg-gray-50 text-gray-900 dark:bg-[#050505] dark:text-white antialiased selection:bg-orange-600 selection:text-white">
     <div class="bg-texture"></div>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
